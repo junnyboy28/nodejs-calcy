@@ -24,36 +24,3 @@ The Calculator Web Application is a simple and user-friendly calculator built us
 ## Demo
 
 You can try out the Calculator Web Application live at [Demo Link](https://calculator-using-node-js-nn8o.vercel.app/).
-
-## Getting Started
-
-Follow these instructions to set up and run the calculator web application on your local machine.
-
-### Prerequisites
-
-Before you begin, ensure you have the following:
-
-- **Node.js:** Make sure you have Node.js installed. You can download it from [nodejs.org](https://nodejs.org/).
-
-### Installation
-
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/srivarshithdaladuli/Calculator-Using-NodeJS.git
-2. **Navigate to the Project Directory:**
-
-    ```bash
-    cd Calculator-Using-NodeJS
-3.  **Install Dependencies:**
-  
-    ```bash
-     npm install
-    
-### Usage
-To run the calculator web application, follow these steps:
-
-**Start the Node.js Server:**
-
-   ```bash
-      npm start
