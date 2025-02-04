@@ -1,25 +1,33 @@
-let currentInput = '';
+let currentInput = "";
 
 function appendToDisplay(value) {
-    currentInput += value;
-    updateDisplay();
+  currentInput += value;
+  updateDisplay();
 }
 
 function clearDisplay() {
-    currentInput = '';
-    updateDisplay();
+  currentInput = "";
+  updateDisplay();
 }
 
 function calculate() {
-    try {
-        currentInput = eval(currentInput);
-        updateDisplay();
-    } catch (error) {
-        currentInput = 'Error';
-        updateDisplay();
-    }
+  try {
+    if (!currentInput.match(/^[\d+\-*/.() ]+$/)) throw new Error();
+    currentInput = eval(currentInput);
+    updateDisplay();
+  } catch (error) {
+    currentInput = "Error";
+    updateDisplay();
+  }
 }
 
 function updateDisplay() {
-    document.getElementById('display').value = currentInput;
+  if (typeof document !== "undefined") {
+    document.getElementById("display").value = currentInput;
+  }
+}
+
+// Export for Jest testing
+if (typeof module !== "undefined") {
+  module.exports = { appendToDisplay, clearDisplay, calculate };
 }
