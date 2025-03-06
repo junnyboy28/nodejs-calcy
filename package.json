@@ -7,8 +7,8 @@
         "start": "node src/server.js",
         "test": "jest"
     },
-    "author": "Srivarshith Daladuli",
-    "license": "MIT",
+    "author": "Jimil Mandani",
+    "license": "PCCE",
     "dependencies": {
         "express": "^4.17.1",
         "path": "^0.12.7"
